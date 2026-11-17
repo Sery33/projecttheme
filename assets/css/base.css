@@ -15,6 +15,27 @@
   min-height: 100vh;
 }
 
+section > .container-lg {
+  max-width: none;
+  padding-left: var(--theme-content-gap);
+  padding-right: var(--theme-content-gap);
+}
+
+section.hero_image {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+section.hero_image > .container-lg {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section.text_2col_colored > .container-lg {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 body{
   background-color:var(--theme-color-body);
 }

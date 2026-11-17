@@ -42,6 +42,9 @@ while (have_rows('page_modules')) : the_row();
     case 'text_2col':
       get_template_part('template-parts/flex/layout', 'text-2col'); break;
 
+    case 'text_2col_colored':
+      get_template_part('template-parts/flex/layout', 'text-2col-colored'); break;
+
     case 'text_3col':
       get_template_part('template-parts/flex/layout', 'text-3col'); break;
 
