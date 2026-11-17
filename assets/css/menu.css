@@ -19,7 +19,7 @@
 
 #site-navigation .main-menu li a:hover,
 #menu-footer li a:hover {
-  color: var(--theme-color-primary);
+  color: var(--theme-color-secondary-hover);
   transition: color 0.3s ease-in-out;
 }
 

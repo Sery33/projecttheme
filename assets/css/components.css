@@ -39,3 +39,57 @@
 .projecttheme-image-slider .carousel-item img {
   object-fit: cover;
 }
+
+/*** Hero Image ***/
+
+.hero-image {
+  min-height: min(720px, 80vh);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image__background,
+.hero-image__scrim {
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.hero-image__background {
+  object-fit: cover;
+}
+
+.hero-image__scrim {
+  background-color: var(--theme-color-body-tertiary);
+  opacity: 0.8;
+}
+
+.hero-image__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  min-height: inherit;
+  padding: 5rem 1.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.hero-image__title {
+  color: var(--theme-color-primary);
+  font-family: var(--theme-font-heading-secondary);
+  font-size: clamp(3rem, 9vw, var(--theme-font-size-10));
+  letter-spacing: -0.06em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-image__subtitle {
+  color: var(--theme-color-text-default);
+  font-family: var(--theme-font-body);
+  font-size: clamp(1.25rem, 3vw, var(--theme-font-size-06));
+  line-height: 1.2;
+  margin: 0;
+}
