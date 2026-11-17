@@ -1,0 +1,39 @@
+/*
+ * Constants
+ *
+ * Keep colors and reusable theme values here.
+ */
+:root {
+  --theme-color-primary: #3F6B2D;
+  --theme-color-primary-hover:#24331F;
+  --theme-color-secondary: #E4B467;
+  --theme-color-secondary-hover:#CC9D52;
+  --theme-color-body: #FFF0D9;
+  --theme-color-body-secondary: #FFE2B2;
+  --theme-color-body-tertiary:#F2C479; 
+  --theme-color-text-default: #1E1E1E;
+  --theme-color-subtitlegold: #FFD899;
+
+  --theme-transition: all 0.3s ease-in-out;
+
+  --theme-font-body: "gill-sans-nova", Arial, sans-serif;
+  --theme-font-heading: "gill-sans-nova", Arial, sans-serif;
+  --theme-font-heading-secondary: "arnold-bocklin-mn", Arial, sans-serif;
+
+  --theme-font-size-10: 72px;
+  --theme-font-size-09: 64px;
+  --theme-font-size-08: 48px;
+  --theme-font-size-07: 40px;
+  --theme-font-size-06: 32px;
+  --theme-font-size-05: 24px;
+  --theme-font-size-04: 20px;
+  --theme-font-size-03: 16px;
+  --theme-font-size-02: 14px;
+  --theme-font-size-01: 12px;
+
+  --theme-font-weight-semibold: 600;
+
+  --theme-font-size-base: 1rem;
+
+  
+}
