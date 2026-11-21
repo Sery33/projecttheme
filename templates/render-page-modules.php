@@ -11,10 +11,11 @@ if (!function_exists('have_rows') || !have_rows('page_modules')) {
 while (have_rows('page_modules')) : the_row();
 
   // Section-Optionen 
+  $layout = get_row_layout();
   $opts = [
-    'name'       => get_row_layout(),
+    'name'       => $layout,
     'container'  => get_sub_field('container') ?: 'container-lg',
-    'padding_y'  => get_sub_field('padding_y') ?: 'py-5',
+    'padding_y'  => get_sub_field('padding_y') ?: ($layout === 'text_2col_colored' ? 'py-0' : 'py-5'),
     'bg'         => get_sub_field('background') ?: 'none',
     'id'         => get_sub_field('id-anchor') ?: '',
     'show_on'    => get_sub_field('show-on') ?: 'everywhere',

@@ -113,7 +113,7 @@
 
 .text-2col-colored__right {
   background-color: var(--theme-color-primary);
-  color: var(--theme-color-secondary);
+  color: var(--theme-color-body);
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));

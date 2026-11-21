@@ -11,6 +11,10 @@ function section_open(array $opts = []) {
     $py        = $opts['padding_y'] ?? 'py-5';
     $show      = $opts['show_on'] ?? 'everywhere'; // everywhere | only-mobile | only-desktop
 
+    if ($name === 'text_2col_colored') {
+        $py = 'py-0';
+    }
+
     // Sichtbarkeits-Klassen mappen (Bootstrap)
     $visClass = '';
     if ($show === 'only-mobile')  $visClass = 'd-lg-none';
