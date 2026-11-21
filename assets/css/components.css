@@ -31,6 +31,7 @@
   display: grid;
   gap: clamp(2rem, 6vw, 6rem);
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 3rem var(--theme-content-gap);
 }
 
 .news-events--image-right {
@@ -115,6 +116,7 @@
 @media (max-width: 991.98px) {
   .news-events {
     gap: 2.5rem;
+    padding: 3rem 3rem;
   }
 
   .news-events__title {

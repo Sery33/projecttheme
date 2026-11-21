@@ -11,7 +11,7 @@ function section_open(array $opts = []) {
     $py        = $opts['padding_y'] ?? 'py-5';
     $show      = $opts['show_on'] ?? 'everywhere'; // everywhere | only-mobile | only-desktop
 
-    if ($name === 'text_2col_colored') {
+    if ($name === 'text_2col_colored' || $name === 'news_events') {
         $py = 'py-0';
     }
 
