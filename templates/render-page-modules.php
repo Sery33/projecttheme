@@ -87,6 +87,9 @@ while (have_rows('page_modules')) : the_row();
 
     case 'hero_image':
       get_template_part('template-parts/flex/layout', 'hero-image'); break;
+
+    case 'news_events':
+      get_template_part('template-parts/flex/layout', 'news-events'); break;
   }
 
   if (function_exists('section_close')) {
