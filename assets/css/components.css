@@ -33,6 +33,14 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.news-events--image-right {
+  background-color: var(--theme-color-secondary);
+}
+
+.news-events--image-left {
+  background-color: var(--theme-color-body-secondary);
+}
+
 .news-events__content {
   display: flex;
   flex-direction: column;
