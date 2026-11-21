@@ -31,7 +31,17 @@ section.hero_image {
   padding-top: 0 !important;
 }
 
+section.hero_image_small {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
 section.hero_image > .container-lg {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section.hero_image_small > .container-lg {
   padding-left: 0;
   padding-right: 0;
 }

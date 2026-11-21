@@ -231,6 +231,16 @@
   margin: 0;
 }
 
+.hero-image--small {
+  height: 168px;
+  min-height: 168px;
+}
+
+.hero-image--small .hero-image__content {
+  justify-content: center;
+  padding: 1.5rem;
+}
+
 /*** Colored Two-Column Text ***/
 
 .text-2col-colored {
