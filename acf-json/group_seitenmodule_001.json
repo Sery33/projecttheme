@@ -683,6 +683,26 @@
                             "append": ""
                         },
                         {
+                            "key": "field_tlir_subtitle",
+                            "label": "Untertitel",
+                            "name": "subtitle",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
                             "key": "field_tlir_text",
                             "label": "Text",
                             "name": "text",
@@ -780,6 +800,26 @@
                             "key": "field_iltr_head",
                             "label": "Überschrift",
                             "name": "headline",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_iltr_subtitle",
+                            "label": "Untertitel",
+                            "name": "subtitle",
                             "aria-label": "",
                             "type": "text",
                             "instructions": "",

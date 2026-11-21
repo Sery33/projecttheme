@@ -243,6 +243,123 @@
 
 /*** Colored Two-Column Text ***/
 
+/*** Image / Text layouts ***/
+
+.image-text-layout {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(3rem, 13.333vw, 12rem);
+  min-height: 350px;
+  padding: 0 var(--theme-content-gap);
+  width: 100%;
+}
+
+.image-text-layout--text-left {
+  background-color: var(--theme-color-primary);
+  color: var(--theme-color-body);
+}
+
+.image-text-layout--image-left {
+  background-color: var(--theme-color-body);
+  color: var(--theme-color-text-default);
+}
+
+.image-text-layout__image {
+  height: 446px;
+  min-width: 0;
+  overflow: hidden;
+  padding: 48px 0;
+}
+
+.image-text-layout__image img {
+  border-radius: 0;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.image-text-layout__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+.image-text-layout__content h2 {
+  color: inherit;
+  font-family: var(--theme-font-heading);
+  font-size: var(--theme-font-size-05);
+  font-weight: var(--theme-font-weight-semibold);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.image-text-layout__subtitle {
+  color: var(--theme-color-text-default);
+  font-family: var(--theme-font-body);
+  font-size: var(--theme-font-size-04);
+  line-height: 1.2;
+  margin: -1rem 0 0;
+}
+
+.image-text-layout--text-left .image-text-layout__subtitle {
+  color: var(--theme-color-subtitlegold);
+}
+
+.image-text-layout__content .rte {
+  color: inherit;
+  font-family: var(--theme-font-body);
+  font-size: var(--theme-font-size-03);
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.image-text-layout__content .rte p {
+  margin: 0 0 1.5rem;
+}
+
+.image-text-layout__content .rte p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1199.98px) {
+  .image-text-layout {
+    gap: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .image-text-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: 0;
+    padding: 0 1.5rem;
+  }
+
+  .image-text-layout--text-left .image-text-layout__content {
+    order: 1;
+  }
+
+  .image-text-layout--text-left .image-text-layout__image {
+    order: 2;
+  }
+
+  .image-text-layout__image,
+  .image-text-layout__content {
+    width: 100%;
+  }
+
+  .image-text-layout__image {
+    height: 376px;
+    padding: 48px 0;
+  }
+}
+
 .text-2col-colored {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

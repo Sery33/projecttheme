@@ -14,8 +14,8 @@ while (have_rows('page_modules')) : the_row();
   $layout = get_row_layout();
   $opts = [
     'name'       => $layout,
-    'container'  => in_array($layout, ['text_2col_colored', 'news_events'], true) ? 'none' : (get_sub_field('container') ?: 'container-lg'),
-    'padding_y'  => get_sub_field('padding_y') ?: (in_array($layout, ['text_2col_colored', 'news_events'], true) ? 'py-0' : 'py-5'),
+    'container'  => in_array($layout, ['text_2col_colored', 'news_events', 'text_left_image_right', 'image_left_text_right'], true) ? 'none' : (get_sub_field('container') ?: 'container-lg'),
+    'padding_y'  => get_sub_field('padding_y') ?: (in_array($layout, ['text_2col_colored', 'news_events', 'text_left_image_right', 'image_left_text_right'], true) ? 'py-0' : 'py-5'),
     'bg'         => get_sub_field('background') ?: 'none',
     'id'         => get_sub_field('id-anchor') ?: '',
     'show_on'    => get_sub_field('show-on') ?: 'everywhere',
