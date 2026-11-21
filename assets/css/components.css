@@ -243,6 +243,127 @@
 
 /*** Colored Two-Column Text ***/
 
+/*** Card Grid Image ***/
+
+.card-grid-image {
+  background-color: var(--theme-color-body-secondary);
+  background-image: url("../images/card-grid-image/afc4a.png");
+  background-position: center;
+  background-size: cover;
+  padding: 48px clamp(24px, 6.667vw, 96px) 96px;
+}
+
+.card-grid-image__title {
+  color: var(--theme-color-primary);
+  font-family: var(--theme-font-heading-secondary);
+  font-size: clamp(3.5rem, 6.667vw, var(--theme-font-size-10));
+  line-height: 0.72;
+  margin: 0 0 64px;
+  text-align: center;
+}
+
+.card-grid-image__grid {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card-grid-image__card {
+  background-color: var(--theme-color-body);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+  min-width: 0;
+  padding: 24px 48px;
+}
+
+.card-grid-image__image {
+  height: 260px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.card-grid-image__image-element {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-grid-image__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.card-grid-image__card-title {
+  font-family: var(--theme-font-body);
+  font-size: var(--theme-font-size-05);
+  font-weight: var(--theme-font-weight-semibold);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.card-grid-image__subtitle {
+  font-family: var(--theme-font-body);
+  font-size: var(--theme-font-size-04);
+  line-height: 1.2;
+  margin: -8px 0 0;
+}
+
+.card-grid-image__text {
+  font-family: var(--theme-font-body);
+  font-size: var(--theme-font-size-03);
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.card-grid-image__text p {
+  margin: 0 0 1rem;
+}
+
+.card-grid-image__text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1199.98px) {
+  .card-grid-image {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .card-grid-image__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767.98px) {
+  .card-grid-image {
+    padding: 32px 24px 48px;
+  }
+
+  .card-grid-image__title {
+    line-height: 0.9;
+    margin-bottom: 40px;
+  }
+
+  .card-grid-image__grid {
+    gap: 24px;
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid-image__card {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .card-grid-image__image {
+    height: 260px;
+  }
+}
+
 /*** Image / Text layouts ***/
 
 .image-text-layout {
