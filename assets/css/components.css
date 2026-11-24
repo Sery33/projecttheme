@@ -34,26 +34,24 @@
   gap: clamp(2rem, 6vw, 6rem);
   grid-template-columns: repeat(2, minmax(0, 1fr));
   padding: 3rem var(--theme-content-gap);
+  position: relative;
 }
 
-.news-events--image-right {
-  background-image: url("../images/news-and-events-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.news-events--image-left {
-  background-image: url("../images/blog-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.news-events__background {
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
 }
 
 .news-events__content {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .news-events__title {
@@ -112,7 +110,9 @@
   height: 100%;
   min-height: 0;
   overflow: hidden;
+  position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 .news-events__image-element {
@@ -141,8 +141,7 @@
 }
 
 @media (max-width: 767.98px) {
-  .news-events,
-  .news-events--image-left {
+  .news-events {
     display: flex;
     flex-direction: column;
     padding: 3rem 0 0;
@@ -259,7 +258,7 @@
 
 .card-grid-image {
   background-color: var(--theme-color-body-secondary);
-  background-image: url("../images/card-grid-image/afc4a.png");
+  background-image: url("../images/card-grid-image/afc4a.jpg");
   background-position: center;
   background-size: cover;
   padding: 48px clamp(24px, 6.667vw, 96px) 96px;

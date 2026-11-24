@@ -5,9 +5,19 @@ $layout      = get_sub_field('layout') ?: 'image-right';
 $items       = get_sub_field('items');
 $title_tag   = $title ? '<h2 class="news-events__title">' . esc_html($title) . '</h2>' : '';
 $image_first = $layout === 'image-left';
+$background  = $image_first ? 'blog-bg.jpg' : 'news-and-events-bg.jpg';
 ?>
 
 <div class="news-events news-events--<?php echo esc_attr($image_first ? 'image-left' : 'image-right'); ?>">
+  <img
+    class="news-events__background"
+    src="<?php echo esc_url(get_theme_file_uri('/assets/images/' . $background)); ?>"
+    alt=""
+    aria-hidden="true"
+    loading="lazy"
+    decoding="async"
+  >
+
   <?php if ($image_first): ?>
     <div class="news-events__image">
       <?php if ($image_id): ?>
