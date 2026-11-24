@@ -363,8 +363,28 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_text2_colored_left_title",
+                            "label": "Linke Spalte Titel",
+                            "name": "left_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
                             "key": "field_text2_colored_left",
-                            "label": "Linke Spalte",
+                            "label": "Linke Spalte Inhalt",
                             "name": "left",
                             "aria-label": "",
                             "type": "wysiwyg",
