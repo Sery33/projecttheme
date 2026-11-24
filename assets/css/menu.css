@@ -23,6 +23,13 @@
   transition: color 0.3s ease-in-out;
 }
 
+header a:focus-visible,
+footer a:focus-visible {
+  color: var(--theme-color-secondary-hover);
+  outline: 2px solid var(--theme-color-secondary-hover);
+  outline-offset: 4px;
+}
+
 #menu-footer {
   list-style: none;
   display: flex;
